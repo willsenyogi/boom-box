@@ -37,13 +37,20 @@ client.on("messageCreate", message => {
 
     const command = args.shift();
 
-    if(command === "play"){
-        distube.play(message.member.voice.channel, args.join(" "), {
-            member : message.member,
-            textChannel : message.channel,
-            message
-        });
-    }
+    if (command === 'play') {
+		const voiceChannel = message.member?.voice?.channel;
+		if (voiceChannel) {
+			distube.play(voiceChannel, args.join(' '), {
+				message,
+				textChannel: message.channel,
+				member: message.member,
+			});
+		} else {
+			message.channel.send(
+				"**I can't find you in any voice channel**",
+			);
+		}
+	}
 
     if (command === 'stop') {
 		distube.stop(message);
@@ -54,7 +61,7 @@ client.on("messageCreate", message => {
         let queue = distube.getQueue(message.guild.id);
         let channel = message.member.voice.channel;
         if (!channel) {
-          return message.channel.send(`**I can't find in any voice channel**`)
+          return message.channel.send(`**I can't find you in any voice channel**`)
         }
         if (!queue) {
           return message.channel.send(`**No song(s) in queue **`)
