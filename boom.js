@@ -10,7 +10,7 @@ const client = new discord.Client({
 
 const config = {
 	prefix: '!',
-	token: 'NzcyMDgzMzk3NzQ4NDU3NDgy.Gd8S7B.rl2fZw6_TQJhsDCrlxgH2wrtlkhGRPEdIeFXCc',
+	token: 'NzcyMDgzMzk3NzQ4NDU3NDgy.GwR8fO.p9Vy91cbWfewmix2NWg7LM4Qd61VM0FV8ac460',
 };
 
 const {DisTube} = require('distube');
