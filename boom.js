@@ -77,7 +77,7 @@ client.on("messageCreate", message => {
      if (command === 'queue') {
 		const queue = distube.getQueue(message);
 		if (!queue) {
-			message.channel.send('Nothing playing right now!');
+			message.channel.send('**There is no song(s) in queue**');
 		} else {
 			message.channel.send(
 				`Song(s) Queue :\n${queue.songs
@@ -85,7 +85,7 @@ client.on("messageCreate", message => {
 						(song, id) =>
 							`**${id ? id : 'Currently Playing : '}** ${
 								song.name
-							} - \`${song.formattedDuration}\``,
+							} - \`${song.formattedDuration}\`, Requested by : \`${song.user}\``,
 					)
 					.slice(0, 10)
 					.join('\n')}`,
@@ -98,12 +98,12 @@ client.on("messageCreate", message => {
 
 distube
     .on("playSong", (queue, song) => 
-    queue.textChannel.send(`Currently playing this jam :sunglasses:  : " **${song.name}** \`${song.formattedDuration}\` Requested by  ${song.user}`)
+    queue.textChannel.send(`Currently playing : " **${song.name}** \`${song.formattedDuration}\` Requested by  ${song.user}`)
 )
 
     .on('addSong', (queue, song) =>
 		queue.textChannel?.send(
-			`**This jam** : ${song.name} - \`${song.formattedDuration}\` added to queue by ${song.user}`,
+			` **${song.name}**, \`${song.formattedDuration}\` is added to queue`,
 		),
 	)
     .on('disconnect', queue =>
