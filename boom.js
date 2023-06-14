@@ -85,7 +85,7 @@ client.on("messageCreate", message => {
 						(song, id) =>
 							`**${id ? id : 'Currently Playing : '}** ${
 								song.name
-							} - \`${song.formattedDuration}\`, Requested by : \`${song.user}\``,
+							} - \`${song.formattedDuration}\`, Requested by : \`${song.member}\``,
 					)
 					.slice(0, 10)
 					.join('\n')}`,
