@@ -2,7 +2,7 @@
   "name": "boombox",
   "version": "4.3.2",
   "description": "Music Discord Bot",
-  "main": "boom.js",
+  "main": "boom",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
