@@ -98,7 +98,7 @@ client.on("messageCreate", message => {
 
 distube
     .on("playSong", (queue, song) => 
-    queue.textChannel.send(`Currently playing : " **${song.name}** \`${song.formattedDuration}\``)
+    queue.textChannel.send(`Currently playing : " **${song.name}** " \`${song.formattedDuration}\``)
 )
 
     .on('addSong', (queue, song) =>
