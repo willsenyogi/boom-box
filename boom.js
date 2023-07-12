@@ -105,6 +105,23 @@ client.on("messageCreate", message => {
 		message.channel.send('fuck you');
 	}
 
+	if(command === 'lifeisroblox') {
+		message.channel.send('https://cdn.discordapp.com/attachments/932304410929926216/1127991310213726388/ae8ac092865a4a81818983dcf170a007_316652412_575985698067885_5405299047028533140_n.mp4');
+	}
+
+	if(command === 'kfc') {
+		message.channel.send('https://cdn.discordapp.com/attachments/932304410929926216/1128668250260123658/Snaptik.app_7254540580590472454.mp4');
+	}
+
+	if(command === 'together') {
+		message.channel.send('https://cdn.discordapp.com/attachments/709407328926957570/1128650694002483371/Snaptik.app_7254255559086525739.mp4');
+	}
+
+	if(command === 'help'){
+		message.channel.send('**Prefix : !**\n**Music bot command**\n**play [songName or ytLink]** - play music with given query\n**queue** - show song queue\n**skip** - skips music to the next queue\n**stop** - stops broadcasting music\n\n' +
+		'**Silly videos command**\n**gm** - sends morning greetings video\n**friday** - sends friday daily speech\n**lifeisroblox** - sends mindblowing motivational video\n**kfc** - kfc lemon tea\n**together** - together we are stronger\n\n');
+	}
+
 
     });
 
