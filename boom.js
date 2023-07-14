@@ -117,11 +117,14 @@ client.on("messageCreate", message => {
 		message.channel.send('https://cdn.discordapp.com/attachments/709407328926957570/1128650694002483371/Snaptik.app_7254255559086525739.mp4');
 	}
 
-	if(command === 'help'){
-		message.channel.send('**Prefix : !**\n**Music bot command**\n**play [songName or ytLink]** - play music with given query\n**queue** - show song queue\n**skip** - skips music to the next queue\n**stop** - stops broadcasting music\n\n' +
-		'**Silly videos command**\n**gm** - sends morning greetings video\n**friday** - sends friday daily speech\n**lifeisroblox** - sends mindblowing motivational video\n**kfc** - kfc lemon tea\n**together** - together we are stronger\n\n');
+	if(command === 'megustastu') {
+		message.channel.send('https://cdn.discordapp.com/attachments/954433420426113025/1129321736106692648/me_gustas_tu.mp4');
 	}
 
+	if(command === 'help'){
+		message.channel.send('**Prefix : !**\n**Music bot command**\n**play [songName or ytLink]** - play music with given query\n**queue** - show song queue\n**skip** - skips music to the next queue\n**stop** - stops broadcasting music\n\n' +
+		'**Silly videos command**\n**gm** - sends morning greetings video\n**friday** - sends friday daily speech\n**lifeisroblox** - sends mindblowing motivational video\n**kfc** - kfc lemon tea\n**together** - together we are stronger\n**megustastu** - ghost rider\n\n');
+	}
 
     });
 
