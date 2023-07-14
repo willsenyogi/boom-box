@@ -23,6 +23,10 @@ const distube = new DisTube(client, {
 });
 
 client.on("ready", client => {
+	client.user.setActivity({ 
+		 name : 'me gustas tu - !help',
+		 type : discord.ActivityType.Watching,
+	});
     console.log('Boom-Box is Ready to Rock n Roll')
 });
 
@@ -156,7 +160,7 @@ distube
 	})
     .on('empty', queue =>
 		queue.textChannel?.send(
-			'Everybody is leaving :disappointed_relieved:, i guess its my time to go',
+			'Cleared Queue!',
 		),
 	)
     .on('searchResult', (message, result) => {
