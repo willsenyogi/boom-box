@@ -141,10 +141,18 @@ client.on("messageCreate", message => {
 		message.channel.send('https://cdn.discordapp.com/attachments/954433420426113025/1130061091683192872/kfc_macam_burung_puyuh.mp4');
 	}
 
+	if(command === 'sunday') {
+		message.channel.send('https://cdn.discordapp.com/attachments/954433420426113025/1139480356546945035/perhaps_what_is_this.mp4');
+	}
+
+	if(command === 'khodam') {
+		message.channel.send('https://cdn.discordapp.com/attachments/954433420426113025/1139480895934443571/khodam.mp4');
+	}
+
 	if(command === 'help'){
 		message.channel.send('**Prefix : !**\n**Music bot command**\n**play [songName or ytLink]** - play music with given query\n**queue** - show song queue\n**skip** - skips music to the next queue\n**stop** - stops broadcasting music\n\n' +
 		'**Silly videos command**\n**gm** - sends morning greetings video\n**friday** - sends friday daily speech\n**lifeisroblox** - sends mindblowing motivational video\n**kfc** - kfc lemon tea\n**together** - together we are stronger\n**megustastu** - ghost rider\n**stonksdown** - gus fring with stonks down background\n' +
-		'**nasilemak** - kfc nasi lemak\n**borgir** - kfc burger P. Ramlee\n**kfcpukimak**- kfc drumstick\n\n');
+		'**nasilemak** - kfc nasi lemak\n**borgir** - kfc burger P. Ramlee\n**kfcpukimak**- kfc drumstick\n**sunday** - perhaps what is this?\n**khodam** - monday left me broken khodam\n\n');
 	}
 
     });
