@@ -149,6 +149,10 @@ client.on("messageCreate", message => {
 		message.channel.send('https://cdn.discordapp.com/attachments/954433420426113025/1139480895934443571/khodam.mp4');
 	}
 
+	if(command === 'wilson') {
+		message.channel.send('https://cdn.discordapp.com/attachments/863665846454714381/1173884901473398814/Wilson_Lo_Siento.mp4?ex=65659482&is=65531f82&hm=ca7fb24ada87eea3ace72bcf2c00e9f5a8f99347daa13f5bcfb2fa246c332927&');
+	}
+
 	if(command === 'help'){
 		message.channel.send('**Prefix : !**\n**Music bot command**\n**play [songName or ytLink]** - play music with given query\n**queue** - show song queue\n**skip** - skips music to the next queue\n**stop** - stops broadcasting music\n\n' +
 		'**Silly videos command**\n**gm** - sends morning greetings video\n**friday** - sends friday daily speech\n**lifeisroblox** - sends mindblowing motivational video\n**kfc** - kfc lemon tea\n**together** - together we are stronger\n**megustastu** - ghost rider\n**stonksdown** - gus fring with stonks down background\n' +
